@@ -9,7 +9,8 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...
       - echo SHELL is "${SHELL}"
-      - myvar=(a b c)
+      - myvar="a b c"
       - echo $myvar
+      - for item in $myvar; do echo $item; done
       - for item in "${myvar[@]}"; do echo $item; done
       - echo End process ----
