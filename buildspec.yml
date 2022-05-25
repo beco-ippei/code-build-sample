@@ -8,6 +8,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
+      - echo SHELL is "${SHELL}"
       - export myvar=(a b c)
       - for item in $myvar; do echo $item; done
       - echo End process ----
