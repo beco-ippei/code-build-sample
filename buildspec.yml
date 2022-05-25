@@ -9,5 +9,5 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...
       - myvar=(a b c)
-      - for item in myvar; do echo $item; done
+      - for item in $myvar; do echo $item; done
       - echo End process ----
